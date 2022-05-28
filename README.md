@@ -1,15 +1,39 @@
-# Basic Sample Hardhat Project
+# Ejemplo básico de un esquema de Votación con Solidity
+> El contenido del curso es producto del siguiente curso: [Semana 1](https://www.coursera.org/learn/smarter-contracts)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+El código está compuesto por una serie de contractos, los cuales se pueden encontrar en la carpeta `/contracts`: 
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```js
+contracts/
+  ├── ballotBasic.sol
+  ├── ballotWithModifier.sol
+  ├── ballotWithStages.sol
+  ├── bidderData.sol
+  ├── greeter.sol
+  └── Greeter.sol
 ```
+
+El proyecto cuenta con los siguientes scripts: 
+
+```js
+  npm run build
+```
+> Nos permite compilar los contractos que necesitamos 
+
+```js
+  npm run local
+```
+> Nos permite ejecutar nuestro contratos de maneral local
+
+
+```js
+  npm run test
+```
+> Nos permite ejecutar los test unitarios de los contratos
+
+
+```js
+  npm run build
+```
+> Nos permite ver la cobertura de los contractos
+
